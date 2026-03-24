@@ -68,4 +68,3 @@ bash script.sh
 ---
 
 Happy scripting! 🚀
-# bash-basics
