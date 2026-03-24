@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# $@ will be the list of all arguments passed
+for thing in "$@"; do
+  echo "thing is $thing"
+done
