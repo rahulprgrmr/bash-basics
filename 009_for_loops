@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+for name in foo bar baz bat; do
+  echo "name is $name"
+done
+
+for thing in {a..f}; do
+  echo "thing is $thing"
+done
+
+for thing in {0..20}; do
+  echo "number is $thing"
+done
+
+max=5
+for ((i = 0; i < max; i++)); do
+  echo "for number is $i"
+done

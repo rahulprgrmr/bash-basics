@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+
+array=(foo bar baz bat)
+echo "$array"
+echo "0: ${array[0]}"
+echo "1: ${array[1]}"
+echo "2: ${array[2]}"
+echo "3: ${array[3]}"
+echo "4: ${array[4]}"
+echo "-1: ${array[-1]}"
+
+idx=2
+echo "idx: ${array[$idx]}"
+echo "idx: ${array[idx]}"
+
+echo
+
+echo "*: ${array[*]}"
+echo "@: ${array[@]}"
+
+echo "loop over *"
+for item in "${array[*]}"; do
+  echo "item is $item"
+done
+
+echo
+
+echo "loop over @"
+for item in "${array[@]}"; do
+  echo "item is $item"
+done
+
+echo
+
+# We can also explicitly declare an array
+declare -a array2=(foo bar bat baz)
+
+# Copying an array and adding more items
+array2_copy=("${array2[@]}" dave guy)
+
+# Extend an array
+array2_copy+=(rahul nat)
+
+for item in "${array2_copy[@]}"; do
+  echo "item is $item"
+done

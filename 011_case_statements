@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+s=$1
+
+case "$s" in
+rahul)
+  echo "Hi Rahul"
+  ;;
+buddy)
+  echo "Hi Buddy"
+  ;;
+*)
+  echo "You are not welcome"
+  ;;
+esac
